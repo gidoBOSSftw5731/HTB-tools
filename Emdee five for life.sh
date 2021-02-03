@@ -2,6 +2,7 @@
 #change this to be whatever htb gave you
 export destip=1.1.1.1:12345
 
+echo "This wont work every time, so keep trying til it does"
 wget --load-cookies /tmp/cookies $destip -O - -q --post-data $(
 	echo hash=`
 		wget --keep-session-cookies --save-cookies /tmp/cookies $destip -O - -q 2>/dev/null|
